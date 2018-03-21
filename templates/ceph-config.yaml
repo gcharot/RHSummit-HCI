@@ -1,0 +1,21 @@
+resource_registry:
+
+# Just in case we want to redeploy - BE careful in production.
+  OS::TripleO::NodeUserData: /home/stack/templates/wipe-disks.yaml
+
+parameter_defaults:
+
+  CephAnsibleDisksConfig:
+    devices:
+      - /dev/vdb
+    dedicated_devices:
+      - /dev/vdc
+    osd_scenario: non-collocated
+    journal_size: 8192
+
+  CephPoolDefaultPgNum: 64
+
+  CephAnsibleExtraConfig:
+    ceph_osd_docker_memory_limit: 2g
+
+  CephAnsiblePlaybookVerbosity: 3

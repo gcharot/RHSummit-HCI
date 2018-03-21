@@ -1,0 +1,8 @@
+resource_registry:
+  OS::TripleO::DeploymentSteps: OS::Heat::None
+  OS::TripleO::Tasks::ControllerPreConfig: OS::Heat::None
+  OS::TripleO::Tasks::ControllerPostConfig: OS::Heat::None
+  OS::TripleO::Tasks::ComputePreConfig: OS::Heat::None
+  OS::TripleO::Tasks::ComputePostConfig: OS::Heat::None
+  OS::TripleO::Tasks::CephStoragePreConfig: OS::Heat::None
+  OS::TripleO::Tasks::CephStoragePostConfig: OS::Heat::None

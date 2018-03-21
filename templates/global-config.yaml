@@ -1,0 +1,19 @@
+parameter_defaults:
+
+  ControllerCount: 1
+  OvercloudControllerFlavor: control
+  ControllerSchedulerHints:
+    'capabilities:node': 'controller-%index%'
+
+#  ComputeCount: 1
+#  OvercloudComputeFlavor: compute
+
+  ComputeHCICount: 3
+  OvercloudComputeHCIFlavor: osdcompute
+  ComputeHCISchedulerHints:
+    'capabilities:node': 'osdcompute-%index%'
+
+  # Misc Net Config
+  TimeZone: 'US/Eastern'
+  NeutronNetworkType: 'vxlan,vlan'
+  NeutronTunnelTypes: 'vxlan'
