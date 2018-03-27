@@ -1,8 +1,6 @@
-rameter_defaults:
+parameter_defaults:
   HostnameMap:
-    overcloud-ctrl01: lab-controller01
-#    overcloud-novacompute-0: lab-compute01
-#    overcloud-novacompute-1: lab-compute02
-    overcloud-hci01: lab-hci01
-    overcloud-hci02: lab-hci02
-    overcloud-hci01: lab-hci03
+    overcloud-controller-0: lab-controller01
+    overcloud-computehci-0: lab-hci01
+    overcloud-computehci-1: lab-hci02
+    overcloud-computehci-2: lab-hci03
