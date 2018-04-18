@@ -66,36 +66,24 @@ parameter_defaults:
     tenant:
     - 172.17.2.201
 
-  ComputeIPs:
+  ComputeHCIIPs:
     # Each compute will get an IP from the lists below, first compute, first IP
     internal_api:
     - 172.17.1.211
     - 172.17.1.212
+    - 172.17.1.213
     storage:
     - 172.17.3.211
     - 172.17.3.212
+    - 172.17.3.213
     tenant:
     - 172.17.2.211
     - 172.17.2.212
-
-  ComputeHCIIPs:
-    # Each compute will get an IP from the lists below, first compute, first IP
-    internal_api:
-    - 172.17.1.213
-    - 172.17.1.214
-    - 172.17.1.215
-    storage:
-    - 172.17.3.213
-    - 172.17.3.214
-    - 172.17.3.215
-    tenant:
     - 172.17.2.213
-    - 172.17.2.214
-    - 172.17.2.215
     storage_mgmt:
+    - 172.17.4.211
+    - 172.17.4.212
     - 172.17.4.213
-    - 172.17.4.214
-    - 172.17.4.215
 
 
 ### VIPs ###

@@ -5,9 +5,6 @@ parameter_defaults:
   ControllerSchedulerHints:
     'capabilities:node': 'controller-%index%'
 
-#  ComputeCount: 1
-#  OvercloudComputeFlavor: compute
-
   ComputeHCICount: 3
   OvercloudComputeHCIFlavor: osdcompute
   ComputeHCISchedulerHints:
